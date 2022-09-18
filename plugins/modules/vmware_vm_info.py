@@ -357,6 +357,7 @@ class VmwareVmInfo(PyVmomi):
                 "ip_address": _ip_address,  # Kept for backward compatibility
                 "mac_address": _mac_address,  # Kept for backward compatibility
                 "uuid": summary.config.uuid,
+                "instance_uuid": summary.config.instanceUuid,
                 "vm_network": net_dict,
                 "esxi_hostname": esxi_hostname,
                 "datacenter": datacenter.name,
